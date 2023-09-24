@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projeto Menu com Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/quantity.css">
+</head>
+
+<body class="bg-dark-subtle">
+  <main class="container bg-light rounded-2 shadow p-3 mb-5 bg-body-tertiary rounded mt-2">
+    <div class="card" style="width: 100%;">
+      <img src="assets/home.jpg" class="card-img-top" alt="Home">
+    </div>
+
+    <header class="text-center mt-2">
+      <h1>Menu - Faça A Sua Escolha</h1>
+    </header>
+
+    <!-- Pratos Principais -->
+    <section class="border border-dark-subtle border-2 rounded-2 mt-5">
+      <article class="text-center mt-4">
+        <h2><strong>Prato Principal</strong></h2>
+        <h3>Todos os pratos acompanham arroz, feijão e a sobremesa do dia</h3>
+      </article>
+
+      <div class="row justify-content-center mt-4 mb-4 gap-4">
+        <div class="card p-2 shadow p-3 shadow p-3" style="width: 18rem;">
+          <img src="assets/bife.jpg" class="card-img-top" alt="Bife com Batata">
+          <div class="card-body">
+            <h5 class="card-title text-center text-black">Bife com Batata</h5>
+            <h4 class="text-success text-center">R$ 30,00</h4>
+          </div>
+          <div class="quantity buttons buttons_added mb-4">
+            <input type="button" value="-" class="minus">
+            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+              class="input-text qty text" size="4" pattern="" inputmode="">
+            <input type="button" value="+" class="plus">
+          </div>
+        </div>
+
+        <div class="card p-2 shadow p-3" style="width: 18rem;">
+          <img src="assets/coxa.jpg" class="card-img-top" alt="Coxa de Frango Crocante">
+          <div class="card-body">
+            <h5 class="card-title text-center text-black">Coxa de Frango Crocante</h5>
+            <h4 class="text-success text-center">R$ 25,00</h4>
+          </div>
+          <div class="quantity buttons buttons_added mb-4">
+            <input type="button" value="-" class="minus">
+            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+              class="input-text qty text" size="4" pattern="" inputmode="">
+            <input type="button" value="+" class="plus">
+          </div>
+        </div>
+
+        <div class="card p-2 shadow p-3" style="width: 18rem;">
+          <img src="assets/panela.jpg" class="card-img-top" alt="Carne da Panela">
+          <div class="card-body">
+            <h5 class="card-title text-center text-black">Carne de Panela</h5>
+            <h4 class="text-success text-center">R$ 22,00</h4>
+          </div>
+          <div class="quantity buttons buttons_added mb-4">
+            <input type="button" value="-" class="minus">
+            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+              class="input-text qty text" size="4" pattern="" inputmode="">
+            <input type="button" value="+" class="plus">
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Acompanhamentos -->
+    <section class="border border-dark-subtle border-2 rounded-2 mt-4">
+      <article class="text-center mt-4">
+        <h2><strong>Acompanhamentos</strong></h2>
+        <h3>Porções para uma pessoa</h3>
+      </article>
+
+      <div class="row justify-content-center mt-4 mb-4 gap-4">
+        <div class="card p-2 shadow p-3" style="width: 18rem;">
+          <img src="assets/farofa.jpg" class="card-img-top" alt="Farofa">
+          <div class="card-body">
+            <h5 class="card-title text-center text-black">Farofa</h5>
+            <h4 class="text-success text-center">R$ 10,00</h4>
+          </div>
+          <div class="quantity buttons buttons_added mb-4">
+            <input type="button" value="-" class="minus">
+            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+              class="input-text qty text" size="4" pattern="" inputmode="">
+            <input type="button" value="+" class="plus">
+          </div>
+        </div>
+
+        <div class="card p-2 shadow p-3" style="width: 18rem;">
+          <img src="assets/salad.jpg" class="card-img-top" alt="Salada">
+          <div class="card-body">
+            <h5 class="card-title text-center text-black">Salada</h5>
+            <h4 class="text-success text-center">R$ 8,00</h4>
+          </div>
+          <div class="quantity buttons buttons_added mb-4">
+            <input type="button" value="-" class="minus">
+            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+              class="input-text qty text" size="4" pattern="" inputmode="">
+            <input type="button" value="+" class="plus">
+          </div>
+        </div>
+
+        <div class="card p-2 shadow p-3" style="width: 18rem;">
+          <img src="assets/torresmo.jpg" class="card-img-top" alt="Torresmo">
+          <div class="card-body">
+            <h5 class="card-title text-center text-black">Torresmo</h5>
+            <h4 class="text-success text-center">R$ 12,00</h4>
+          </div>
+          <div class="quantity buttons buttons_added mb-4">
+            <input type="button" value="-" class="minus">
+            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+              class="input-text qty text" size="4" pattern="" inputmode="">
+            <input type="button" value="+" class="plus">
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Formulário do Pedido -->
+    <form class="border border-dark-subtle border-2 rounded-2 mt-4">
+      <article class="text-center mt-4 mb-4">
+        <h2><strong>Dados Pessoais</strong></h2>
+      </article>
+
+      <div class="row g-3">
+        <div class="col-12 col-md-8 offset-md-2">
+          <input type="text" class="form-control" id="inputNome" placeholder="Nome:">
+        </div>
+  
+        <div class="col-12 col-md-8 offset-md-2">
+          <input type="email" class="form-control" id="inputEmail" placeholder="Email:">
+        </div>
+  
+        <div class="col-12 col-md-8 offset-md-2 mb-4">
+          <input type="text" class="form-control" id="inputTelefone" placeholder="Telefone:">
+        </div>
+      </div>
+    </form>
+
+    <div class="d-grid col-6 mx-auto">
+      <button class="btn btn-primary mt-4" type="button">Calcular</button>
+    </div>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/quantity.js"></script>
+</body>
+
+</html>
