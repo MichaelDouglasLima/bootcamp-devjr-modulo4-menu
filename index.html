@@ -36,7 +36,7 @@
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Pesquise" aria-label="Pesquise">
-          <button class="btn btn-warning" type="submit">Pesquisar</button>
+          <button class="btn btn-warning text-light" type="submit">Pesquisar</button>
         </form>
       </div>
     </div>
@@ -132,7 +132,7 @@
           </div>
           <div class="quantity buttons buttons_added mb-4">
             <input type="button" value="-" class="minus">
-            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+            <input type="number" step="1" min="0" max="" id="2" name="quantity" value="0" title="Qty"
               class="input-text qty text" size="4" pattern="" inputmode="">
             <input type="button" value="+" class="plus">
           </div>
@@ -146,7 +146,7 @@
           </div>
           <div class="quantity buttons buttons_added mb-4">
             <input type="button" value="-" class="minus">
-            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+            <input type="number" step="1" min="0" max="" id="3" name="quantity" value="0" title="Qty"
               class="input-text qty text" size="4" pattern="" inputmode="">
             <input type="button" value="+" class="plus">
           </div>
@@ -171,7 +171,7 @@
           </div>
           <div class="quantity buttons buttons_added mb-4">
             <input type="button" value="-" class="minus">
-            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+            <input type="number" step="1" min="0" max="" id="4" name="quantity" value="0" title="Qty"
               class="input-text qty text" size="4" pattern="" inputmode="">
             <input type="button" value="+" class="plus">
           </div>
@@ -185,7 +185,7 @@
           </div>
           <div class="quantity buttons buttons_added mb-4">
             <input type="button" value="-" class="minus">
-            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+            <input type="number" step="1" min="0" max="" id="5" name="quantity" value="0" title="Qty"
               class="input-text qty text" size="4" pattern="" inputmode="">
             <input type="button" value="+" class="plus">
           </div>
@@ -199,7 +199,7 @@
           </div>
           <div class="quantity buttons buttons_added mb-4">
             <input type="button" value="-" class="minus">
-            <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+            <input type="number" step="1" min="0" max="" id="6" name="quantity" value="0" title="Qty"
               class="input-text qty text" size="4" pattern="" inputmode="">
             <input type="button" value="+" class="plus">
           </div>
@@ -216,21 +216,41 @@
 
       <div class="row g-3">
         <div class="col-12 col-md-8 offset-md-2">
-          <input type="text" class="form-control" id="inputNome" placeholder="Nome:">
+          <input type="text" class="form-control" id="nomeCliente" placeholder="Nome:" required>
         </div>
 
         <div class="col-12 col-md-8 offset-md-2">
-          <input type="email" class="form-control" id="inputEmail" placeholder="Email:">
+          <input type="email" class="form-control" id="emailCliente" placeholder="Email:">
         </div>
 
         <div class="col-12 col-md-8 offset-md-2 mb-4">
-          <input type="text" class="form-control" id="inputTelefone" placeholder="Telefone:">
+          <input type="text" class="form-control" id="telefoneCliente" placeholder="Telefone:">
         </div>
       </div>
     </form>
 
-    <div class="d-grid col-6 mx-auto">
-      <button class="btn btn-primary mt-4" type="button">Calcular</button>
+    <div class="d-grid col-6 mx-auto mt-4">
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#calcular" type="button"
+        onclick="validar()">Calcular</button>
+    </div>
+
+    <div class="modal modal-lg" tabindex="-1" id="calcular">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Restaurante Boa Comida</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="pedido">
+
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
     </div>
 
   </main>
@@ -239,7 +259,12 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
   <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/jquery.mask.min.js"> </script>
   <script src="js/quantity.js"></script>
+  <script src="js/javascript.js"></script>
+  <script>
+    $("#telefoneCliente").mask("(99) 99999-9999");
+  </script>
 </body>
 
 </html>
