@@ -36,7 +36,7 @@
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Pesquise" aria-label="Pesquise">
-          <button class="btn btn-warning text-light" type="submit">Pesquisar</button>
+          <button class="btn btn-warning text-light fw-semibold" type="submit">Pesquisar</button>
         </form>
       </div>
     </div>
@@ -44,7 +44,8 @@
 
   <main class="container bg-light rounded-2 shadow p-3 mb-5 bg-body-tertiary rounded mt-2">
 
-    <div id="carouselExampleCaptions" class="carousel slide">
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide d-none d-lg-block">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
           aria-current="true" aria-label="Slide 1"></button>
@@ -93,10 +94,6 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
-    <!-- <div class="card" style="width: 100%;">
-      <img src="assets/home.jpg" class="card-img-top" alt="Home">
-    </div> -->
 
     <header class="text-center mt-2">
       <h1>Menu - Faça A Sua Escolha</h1>
@@ -215,15 +212,15 @@
       </article>
 
       <div class="row g-3">
-        <div class="col-12 col-md-8 offset-md-2">
+        <div class="col-10 offset-1 col-md-8 offset-md-2">
           <input type="text" class="form-control" id="nomeCliente" placeholder="Nome:" required>
         </div>
 
-        <div class="col-12 col-md-8 offset-md-2">
+        <div class="col-10 offset-1 col-md-8 offset-md-2">
           <input type="email" class="form-control" id="emailCliente" placeholder="Email:">
         </div>
 
-        <div class="col-12 col-md-8 offset-md-2 mb-4">
+        <div class="col-10 offset-1 col-md-8 offset-md-2 mb-4">
           <input type="text" class="form-control" id="telefoneCliente" placeholder="Telefone:">
         </div>
       </div>
